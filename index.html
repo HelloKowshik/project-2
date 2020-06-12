@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/e1cfb25ed4.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Product List</title>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-dark bg-dark d-flex">
+        <h1 class="navbar-brand m-auto">Product Catalog</h1>
+        <input type="text" name="filter" id="filter" class="form-control" placeholder="Ex-Product Name"/>
+    </nav>
+    <div class="card card-body">
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Product Name</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Remove</th>
+                </tr>
+              </thead>
+            <tbody class="collection">
+            </tbody>
+        </table>
+        <!-- <ul class="list-group collection"> -->
+            <!-- <li class="list-group-item collection-item" id="product-0">
+                <strong>Microphone</strong>-BDT-
+                <span class="price">250</span>
+                <i class="fas fa-trash float-right delete-btn"></i>
+            </li> -->
+        <!-- </ul> -->
+        <span class="badge badge-danger msg"></span>
+        <form>
+            <div class="row mt-4">
+                <div class="col">
+                    <input type="text" name="product_name" class="form-control product-name" placeholder="PRODUCT NAME"/>
+                </div>
+                <div class="col">
+                    <input type="text" name="product_price" class="form-control product-price" placeholder="PRODUCT PRICE"/>
+                </div>
+                
+            </div>
+            <button class="btn btn-block btn-primary mt-2 add-product">ADD PRODUCT</button>
+        </form>
+    </div>
+</div>    
+<!-- <script src="index.js"></script> -->
+<script src="script.js"></script>
+<!-- <script src="localStorage.js"></script>     -->
+</body>
+</html>
